@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="text-center m-5">
+        <h1>
+            {{titulo}}
+        </h1>
+    </div>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >Usuarios
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <strong>DB:G9 / Tabla: Registro</strong>
+
+<table class="table">
+        
+        <tbody>
+            {{#each results}}
+            <tr>
+                <td>{{ Usuario }}</td>
+                
+            </tr>
+            {{/each}}
+        </tbody>
+</table>
+
+<script src="/index.js"></script>
+
+
+    </div>
+  </div>
+</div>
